@@ -3115,7 +3115,8 @@ body {
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow: hidden; }
   body.no-scroll {
     max-height: 100%;
     overflow: hidden;
@@ -3269,6 +3270,65 @@ input:invalid {
     color: #8f8d8d;
     border: 1px solid #454647; }
 
+.rightside-menu {
+  position: absolute;
+  width: 100%;
+  max-width: 694px;
+  padding: 41px 47px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: -2px 3px 17px 0 #000000;
+          box-shadow: -2px 3px 17px 0 #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .rightside-menu--js {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%); }
+
+.rightside-menu__close {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 60px;
+  cursor: pointer; }
+
+.rightside-menu__wrapper {
+  text-align: center;
+  max-width: 485px;
+  margin: 0 auto; }
+
+.rightside-menu__logo {
+  display: inline-block;
+  margin-bottom: 40px; }
+
+.rightside-menu__title {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 700;
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin: 0 0 17px;
+  padding-bottom: 15px;
+  position: relative; }
+  .rightside-menu__title::after {
+    position: absolute;
+    content: '';
+    width: 252px;
+    height: 1px;
+    background-color: #6d7278;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.rightside-menu__description {
+  margin: 0 0 75px; }
+
+.rightside-menu__image {
+  min-width: 485px; }
+
 /* Шапка */
 .header__inner {
   width: 100%;
@@ -3373,7 +3433,8 @@ input:invalid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 33%; }
+  width: 33%;
+  margin-right: 10%; }
 
 .footer__social {
   margin: 0;
@@ -3412,8 +3473,7 @@ input:invalid {
 .footer__other {
   margin: 0;
   padding: 0;
-  list-style: none;
-  margin-right: 22%; }
+  list-style: none; }
   .footer__other li:last-child {
     margin-bottom: 0; }
 
