@@ -19,7 +19,38 @@
     </div>
     <!--ХЕДЕР-->
     <header class="header">
-
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu menu--right">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Gallery</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/logo.png" alt="Logo">
+          </a>
+          <nav class="menu menu--left">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn">
+            <svg width="37" height="29">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
 
@@ -27,7 +58,101 @@
 
     <!--ФУТЕР-->
     <footer class="footer">
-
+      <div class="footer__top">
+        <div class="footer__wrapper container">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Contact Us</h3>
+            <p class="footer__text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz&nbsp;you probably occupy
+            </p>
+            <a class="footer__email" href="mailto:ouremailaddress@email.com">
+              <svg width="16" height="12">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+              ouremailaddress@email.com
+            </a>
+            <form class="footer__form form" action="#" method="POST">
+              <div class="form__item">
+                <label class="visually-hidden" for="email">e-mail</label>
+                <input id="email" type="email" name="email" placeholder="Subscribe by email" required>
+              </div>
+              <button class="form__btn button button--dark" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="14" height="15">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-pinterest"></use>
+                  </svg>
+                  Pinterest
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                  WhatsApp
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="18" height="12">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                  Youtube
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__other">
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  Delivery
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  Help
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  More About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__bottom-text">
+            674 Gonzales Drive.&emsp;&emsp;Washington, PA 15301
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include viewport--lav {
+    padding: 0 50px;
+  }
+
+  @include viewport--lg {
+    padding: 0 30px;
+  }
+
+  @include viewport--xs {
+    padding: 0 20px;
+  }
+}

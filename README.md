@@ -1,5 +1,5 @@
 # desire
-desire
+desire - design interior
 ***
 
 ### Основные команды для работы

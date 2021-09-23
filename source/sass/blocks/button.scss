@@ -1,0 +1,47 @@
+.button {
+  @include font(16, 27);
+  @include sans-b;
+  @include btn-reset;
+  width: 30%;
+  display: inline-block;
+  padding: 2px;
+
+  vertical-align: middle;
+  text-align: center;
+
+  border-radius: 21px;
+  // text-transform: uppercase;
+  // text-decoration: none;
+  // border: 1px solid $white;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $black;
+    background-color: $yellow;
+    // border-color: $red;
+  }
+
+  &--dark {
+    padding: 3px;
+    color: $white;
+    background-color: $black;
+  }
+
+  &--light {
+    padding: 2px;
+    color: $grey-tags-text;
+    border: 1px solid $black-tags-border;
+  }
+
+  // @include viewport--av {
+  //   @include font(18, 22);
+  //   padding: 10px 20px;
+  // }
+
+  // @include viewport--sm {
+  //   @include font(14, 18);
+  //   padding: 10px 20px;
+  // }
+}

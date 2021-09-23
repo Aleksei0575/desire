@@ -1,0 +1,22 @@
+.menu {
+  width: 16.9%;
+
+  &--right {
+    margin-left: 3%;
+  }
+}
+
+.menu__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu__link {
+  @include font(16, 22);
+  @include montserrat-b;
+  display: block;
+  padding: 50px 0;
+  color: rgba(54, 56, 56, 0.9);
+}

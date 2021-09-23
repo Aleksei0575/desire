@@ -1,0 +1,125 @@
+.footer__top {
+  background-color: $grey-bg;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.footer__contacts {
+  width: 46%;
+}
+
+.footer__title{
+  @include font(16, 23);
+  @include montserrat-b;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.footer__text {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.footer__email {
+  @include sans-b;
+  @include font(14, 28);
+  position: relative;
+  padding-left: 30px;
+  display: block;
+  margin-bottom: 22px;
+
+  svg {
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+
+.footer__social {
+  @include list-reset;
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__social-item {
+  margin-bottom: 15px;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+    // background-color: $yellow;
+    svg {
+      fill: $red;
+    }
+  }
+}
+
+.footer__social-link {
+  @include sans-b;
+  @include font(14, 28);
+  position: relative;
+  padding-left: 28px;
+
+  svg {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    fill: #707070;
+  }
+}
+
+.footer__other {
+  @include list-reset;
+  margin-right: 22%;
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__other-item {
+  margin-bottom: 15px;
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+    // background-color: $yellow;
+    svg {
+      fill: $red;
+    }
+  }
+}
+
+.footer__other-link {
+  @include sans-b;
+  @include font(14, 28);
+}
+
+.footer__bottom {
+  background-color: $black;
+  text-align: center;
+}
+
+.footer__bottom-text {
+  margin: 0;
+  padding: 41px 0;
+  @include font(16, 28);
+  color: $grey-text-form;
+}
