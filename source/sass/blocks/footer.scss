@@ -44,6 +44,7 @@
   display: flex;
   justify-content: space-between;
   width: 33%;
+  margin-right: 10%;
 }
 
 .footer__social {
@@ -85,7 +86,7 @@
 
 .footer__other {
   @include list-reset;
-  margin-right: 22%;
+  // margin-right: 22%;
 
   li:last-child {
     margin-bottom: 0;

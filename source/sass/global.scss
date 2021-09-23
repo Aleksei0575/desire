@@ -30,6 +30,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 
+  overflow: hidden;
+
   &.no-scroll {
     max-height: 100%;
     overflow: hidden;
