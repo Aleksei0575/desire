@@ -1,0 +1,28 @@
+.slick-dots {
+  //для сброса стилей списка у dots слайдера
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -31px;
+  margin-left: 280px;
+
+  li {
+    padding: 0 15px;
+  }
+
+  button {
+    @include btn-reset;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $black;
+    border-radius: 50%;
+  }
+}
+
+.slick-active {
+  button {
+    background-color: $yellow;
+  }
+}

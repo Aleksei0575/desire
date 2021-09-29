@@ -1,0 +1,32 @@
+.new-collection {
+  padding-top: 60px;
+  padding-bottom: 103px;
+  text-align: center;
+}
+
+.new-collection__title {
+  @include font(36, 51);
+  @include montserrat-b;
+  position: relative;
+  margin: 0 0 25px;
+  padding-bottom: 25px;
+
+  color: $black;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 252px;
+    height: 1px;
+    background-color: $grey-line;
+  }
+}
+
+.new-collection__description {
+  max-width: 730px;
+  margin: 0 auto 53px;
+}

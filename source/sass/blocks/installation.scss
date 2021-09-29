@@ -1,0 +1,44 @@
+.installation {
+  margin-bottom: 80px;
+  padding-top: 176px;
+  // padding-bottom: 80px;
+  width: 100%;
+  min-height: 616px;
+
+  background-image:
+  linear-gradient(to top, rgba($white, 0.8), rgba($white, 0.8)),
+    url('../img/content/installation-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.installation__inner {
+  width: 49%;
+}
+
+.installation__title {
+  @include font(60, 80);
+  @include montserrat-b;
+  position: relative;
+  margin: 0 0 21px;
+  padding-bottom: 22px;
+
+  color: $black;
+
+  &::after {
+    content: '';
+    position: absolute;
+    // margin: 0 auto;
+    left: 0;
+    // right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $grey-line;
+  }
+}
+
+.installation__description {
+  margin: 0;
+}

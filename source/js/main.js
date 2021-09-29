@@ -87,4 +87,11 @@ $(function () {
     $('.rightside-menu').addClass('rightside-menu--js');
     console.log('click');
   });
+
+  $('.promo__slider').slick({
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    // autoplay: true,
+  });
 });
