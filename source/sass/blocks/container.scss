@@ -4,6 +4,20 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  &--big {
+    max-width: 1350px;
+
+    @media (min-width: 1900px) and (max-width: 1921px) {
+      margin-left: 8%;
+      margin-right: auto;
+    }
+  }
+
+  &--fluid {
+    max-width: 1868px;
+    padding: 0;
+  }
+
   @include viewport--lav {
     padding: 0 50px;
   }

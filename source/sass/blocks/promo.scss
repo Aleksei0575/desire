@@ -1,0 +1,49 @@
+.promo {
+  width: 100%;
+  min-height: 722px;
+  padding-bottom: 70px;
+
+  background-image: url('../img/content/promo-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.promo__slider-item {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+}
+
+.promo__slider-img {
+  max-width: 55.8%;
+}
+
+.promo__slider-info {
+  width: 60.7%;
+  padding-top: 180px;
+}
+
+.promo__slider-title {
+  @include font(110, 134);
+  @include montserrat-b;
+  position: relative;
+  margin: 0 0 27px;
+  padding-bottom: 21px;
+
+  color: $black;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 185px;
+    height: 1px;
+    background-color: $grey-line;
+  }
+}
+
+.promo__slider-description {
+  width: 53%;
+}

@@ -17,6 +17,11 @@
 @import "blocks/container";
 @import "blocks/button";
 @import "blocks/rightside-menu";
+@import "blocks/promo";
+@import "blocks/new-collection";
+@import "blocks/gallery";
+@import "blocks/installation";
+@import "blocks/how-works";
 
 /* Шапка */
 @import "blocks/header";
@@ -26,6 +31,8 @@
 /* Подвал */
 @import "blocks/footer";
 
+/* Элементы slick-slider */
+@import "blocks/slick-dots";
 /* Карточка товара */
 
 
