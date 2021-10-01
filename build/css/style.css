@@ -3540,7 +3540,7 @@ input:invalid {
   margin: 0; }
 
 .how-works {
-  margin-bottom: 100px;
+  margin-bottom: 86px;
   text-align: center; }
 
 .how-works__title {
@@ -3642,6 +3642,46 @@ input:invalid {
   width: 50%; }
   .how-works__item-text--center {
     width: 45%; }
+
+.page-gallery {
+  margin-bottom: 90px;
+  text-align: center; }
+  .page-gallery .mixitup-control-active {
+    color: #363838;
+    background-color: #ffef35; }
+
+.page-gallery__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  gap: 25px; }
+
+.page-gallery__btn {
+  font-size: 14px;
+  line-height: 28px;
+  width: initial;
+  padding: 6px 16px;
+  cursor: pointer; }
+
+.page-gallery__items {
+  display: grid;
+  grid-template-areas: 'big big sm sm' 'big big sm sm';
+  grid-gap: 30px 35px; }
+
+.page-gallery__item-big {
+  grid-area: big; }
+
+.page-gallery__item-small {
+  grid-area: sm; }
+
+.page-gallery__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%; }
 
 /* Шапка */
 .header {
