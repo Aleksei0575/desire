@@ -78,6 +78,8 @@
 // })();
 
 $(function () {
+
+
   $('.header__btn').on('click', function () {
     $('.rightside-menu').removeClass('rightside-menu--js');
     console.log('click');
@@ -94,4 +96,12 @@ $(function () {
     variableWidth: true,
     // autoplay: true,
   });
+
+  let mixer = mixitup('.page-gallery__inner', {
+    load: {
+        filter: '.category-living'
+    }
+  });
+
+
 });
