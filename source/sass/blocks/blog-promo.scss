@@ -1,0 +1,41 @@
+.blog-promo {
+  margin-bottom: 99px;
+}
+
+.blog-promo__tile {
+  @include font(36, 51);
+  @include montserrat-b;
+  width: 38.7%;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.blog-promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-promo__item {
+  width: 48.6%;
+}
+
+.blog-promo__img {
+  max-height: 307px;
+  object-fit: cover;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.blog-promo__date {
+  display: block;
+  @include font(14, 28);
+  @include sans-b;
+  margin-bottom: 10px;
+}
+
+.blog-promo__item-title {
+  @include font(24, 38);
+  @include montserrat-b;
+  margin: 0;
+}
