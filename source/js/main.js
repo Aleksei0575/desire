@@ -94,7 +94,7 @@ $(function () {
     dots: true,
     arrows: false,
     variableWidth: true,
-    // autoplay: true,
+    autoplay: true,
   });
 
   let mixer = mixitup('.page-gallery__inner', {
