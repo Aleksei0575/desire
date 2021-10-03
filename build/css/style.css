@@ -3708,15 +3708,17 @@ input:invalid {
 .blog-promo__item {
   width: 48.6%; }
 
+.blog-promo__item-link {
+  display: inline-block;
+  margin-bottom: 10px; }
+
 .blog-promo__img {
   max-height: 307px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  margin-bottom: 10px; }
+  height: 100%; }
 
-.blog-promo__date {
-  display: block;
+.blog-promo__links-box {
   font-size: 14px;
   line-height: 28px;
   font-weight: 600;

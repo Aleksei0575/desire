@@ -20,15 +20,18 @@
   width: 48.6%;
 }
 
+.blog-promo__item-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 .blog-promo__img {
   max-height: 307px;
   object-fit: cover;
   height: 100%;
-  margin-bottom: 10px;
 }
 
-.blog-promo__date {
-  display: block;
+.blog-promo__links-box {
   @include font(14, 28);
   @include sans-b;
   margin-bottom: 10px;
