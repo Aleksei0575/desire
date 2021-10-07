@@ -118,3 +118,12 @@
     transition: $default-transition-settings;
   }
 }
+
+/* Без этогг сниппета не запустится fancybox*/
+/* gulp будет выдавать ошибку при запуске scss*/
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

@@ -1,14 +1,18 @@
-/* Плагины */
+/* normalize */
 @import "plugins/normalize";
-@import "plugins/libs";
-@import "plugins/slick";
-// @import "plugins/jquery.fancybox";
 
 /* Общие */
 @import "variables";
 @import "mixins";
 @import "fonts";
 @import "global";
+
+/* Плагины */
+@import "plugins/libs";
+@import "plugins/slick";
+@import "plugins/jquery.fancybox";
+
+
 
 /* Форма */
 @import "blocks/form";
@@ -24,6 +28,13 @@
 @import "blocks/how-works";
 @import "blocks/page-gallery";
 @import "blocks/blog-promo";
+@import "blocks/inspiration";
+
+/* breadcrambs */
+@import "blocks/breadcrambs";
+
+/* Страница About-Us */
+@import "blocks/about-us";
 
 /* Шапка */
 @import "blocks/header";
