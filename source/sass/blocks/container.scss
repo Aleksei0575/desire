@@ -4,11 +4,20 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  &--big {
+  &--slider {
     max-width: 1350px;
 
     @media (min-width: 1900px) and (max-width: 1921px) {
       margin-left: 8%;
+      margin-right: auto;
+    }
+  }
+
+  &--big {
+    max-width: 1360px;
+
+    @media (min-width: 1900px) and (max-width: 1921px) {
+      margin-left: 8.7%;
       margin-right: auto;
     }
   }

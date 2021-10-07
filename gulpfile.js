@@ -40,6 +40,7 @@ gulp.task('style', () => gulp.src('source/sass/style.scss')
 
 gulp.task('css', () => gulp.src(['node_modules/animate.css/animate.css',
                         'node_modules/slick-carousel/slick/slick.css',
+                        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
                       ])
   .pipe(concat('_libs.scss'))
   .pipe(gulp.dest('source/sass/plugins'))

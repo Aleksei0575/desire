@@ -105,3 +105,14 @@ $(function () {
 
 
 });
+'use strict';
+(function () {
+  var elementsLine = document.querySelectorAll('.inspiration__line');
+
+  for (let elem of elementsLine) {
+    // console.log(elem.dataset.width);
+    let result = elem.dataset.width;
+    elem.style.width = result;
+  }
+
+})();

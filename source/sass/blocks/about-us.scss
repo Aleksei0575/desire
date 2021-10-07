@@ -1,0 +1,81 @@
+.about-us {
+  margin-bottom: 100px;
+}
+
+.about-us__preview {
+  width: 100%;
+  min-height: 399px;
+  margin-bottom: 75px;
+
+  background-image: url('../img/about-us/about-us-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us__preview-title {
+  @include font(60, 80);
+  @include montserrat-b;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 399px;
+  color: $black;
+}
+
+.about-us__content {
+  margin-bottom: 85px;
+}
+
+.about-us__content-title {
+  @include font(36, 60);
+  @include montserrat-b;
+  position: relative;
+  width: 74%;
+  margin: 0 0 24px;
+  padding-bottom: 24px;
+
+  color: $black;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    // right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $grey-line;
+  }
+}
+
+.about-us__content-block {
+  padding-left: 26%;
+}
+
+.about-us__content-text {
+  margin: 0;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
+}
+
+.about-us__video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 414px;
+
+  background-image: url('../img/about-us/about-video-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us__video-play {
+  @include btn-reset;
+}

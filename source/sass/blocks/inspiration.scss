@@ -1,0 +1,95 @@
+.inspiration {
+  margin-bottom: 40px;
+  position: relative;
+
+  // background-image: url('../img/about-us/inspiration-bg.jpg');
+  // background-repeat: no-repeat;
+  // background-position: left bottom;
+  // background-size: contain;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 414px;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background-image: url("../img/about-us/inspiration-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    z-index: -1;
+  }
+}
+
+.inspiration__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inspiration__img {
+  width: 32.5%;
+}
+
+.inspiration__content {
+  width: 61.7%;
+}
+
+.inspiration__title {
+  @include font(36, 60);
+  @include montserrat-b;
+  position: relative;
+  // width: 74%;
+  margin: 5px 0 25px;
+  padding-bottom: 15px;
+
+  color: $black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    // right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $grey-line;
+  }
+}
+
+.inspiration__description {
+  margin: 0 0 56px;
+}
+
+.inspiration__list {
+  @include list-reset;
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.inspiration__item {
+  margin-bottom: 35px;
+  @include font(16, 23);
+  @include montserrat-b;
+  color: $black;
+}
+
+.inspiration__item-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 2px solid $white;
+  border-radius: 4px;
+}
+
+.inspiration__line {
+  height: 2px;
+  margin-top: -2px;
+  background-color: $black;
+  border-radius: 4px;
+}

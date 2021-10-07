@@ -1,0 +1,30 @@
+.breadcrambs {
+  padding: 14px 0 14px;
+  background: rgba($grey-bg, 0.5);
+}
+
+.breadcrambs__list {
+  @include list-reset;
+  display: flex;
+}
+
+.breadcrambs__item {
+  // position: relative;
+
+  &::after {
+    content: '/';
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+}
+
+.breadcrambs__item:last-child {
+  &::after {
+    content: '';
+  }
+}
+
+.breadcrambs__link {
+  @include font(14, 28);
+  color: $grey;
+}
