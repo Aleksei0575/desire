@@ -5321,7 +5321,7 @@ body.compensate-for-scrollbar {
   margin: 0; }
 
 .inspiration {
-  margin-bottom: 40px;
+  margin-bottom: 62px;
   position: relative; }
   .inspiration::after {
     position: absolute;
@@ -5333,7 +5333,7 @@ body.compensate-for-scrollbar {
     right: 0;
     background-image: url("../img/about-us/inspiration-bg.jpg");
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center;
     background-size: contain;
     z-index: -1; }
 
@@ -5404,6 +5404,36 @@ body.compensate-for-scrollbar {
   margin-top: -2px;
   background-color: #363838;
   border-radius: 4px; }
+
+.partners {
+  width: 1865px;
+  margin: 0 auto 50px; }
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .partners__list li:last-child {
+    margin-right: 0; }
+
+.partners__item {
+  width: 17.5%;
+  margin-right: 3%; }
+
+.partners__link {
+  width: 100%;
+  height: 100%; }
+
+.about-gallery {
+  margin-bottom: 70px; }
 
 /* breadcrambs */
 .breadcrambs {
