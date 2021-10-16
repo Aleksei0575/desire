@@ -5589,12 +5589,32 @@ body.compensate-for-scrollbar {
           align-items: center;
   margin-bottom: 15px; }
 
+.contact__info-social-link:not(:hover) {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
+
+.contact__info-social-link:hover svg, .contact__info-social-link:focus svg {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  fill: #cb0e0e; }
+
 .contact__info-description {
   margin: 0 0 18px;
   color: #a1a1a1; }
 
 .contact__info-tel {
   display: block; }
+  .contact__info-tel:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .contact__info-tel:hover, .contact__info-tel:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e; }
 
 .contact__info-street {
   display: block; }
