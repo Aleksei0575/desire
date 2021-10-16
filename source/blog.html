@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Desire</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <!--Блок подключения спрайта-->
+    <div style="display: none;">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <!--ХЕДЕР-->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu menu--right">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/logo.png" alt="Logo">
+          </a>
+          <nav class="menu menu--left">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn" type="button" aria-label="Open">
+            <svg width="37" height="29">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="rightside-menu rightside-menu--js">
+            <button class="rightside-menu__close" type="button" aria-label="Close">
+              <svg width="26" height="26">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+            <div class="rightside-menu__wrapper">
+              <a class="rightside-menu__logo" href="#">
+                <img class="rightside-menu__logo-img" src="img/rightside-logo.png" alt="Logo menu">
+              </a>
+              <h2 class="rightside-menu__title">
+                Furniture for life
+              </h2>
+              <p class="rightside-menu__description">
+                Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
+              </p>
+              <img class="rightside-menu__image" src="img/content/menu-image.jpg" alt="Menu Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrambs">
+        <div class="container">
+          <ul class="breadcrambs__list">
+            <li class="breadcrambs__item">
+              <a class="breadcrambs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrambs__item">
+              <a class="breadcrambs__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!--ФУТЕР-->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__wrapper container">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Contact Us</h3>
+            <p class="footer__text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz&nbsp;you probably occupy
+            </p>
+            <a class="footer__email" href="mailto:ouremailaddress@email.com">
+              <svg width="16" height="12">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+              ouremailaddress@email.com
+            </a>
+            <form class="footer__form form" action="#" method="POST">
+              <div class="form__item">
+                <label class="visually-hidden" for="email">e-mail</label>
+                <input id="email" type="email" name="email" placeholder="Subscribe by email" required>
+              </div>
+              <button class="form__btn button button--dark" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="14" height="15">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-pinterest"></use>
+                  </svg>
+                  Pinterest
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                  WhatsApp
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <svg width="18" height="12">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                  Youtube
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__other">
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  Delivery
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  Help
+                </a>
+              </li>
+              <li class="footer__other-item">
+                <a class="footer__other-link" href="#">
+                  More About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__bottom-text">
+            674 Gonzales Drive.&emsp;&emsp;Washington, PA 15301
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js/plugins/slick.min.js"></script> -->
+    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

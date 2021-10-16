@@ -57,14 +57,33 @@
   margin-bottom: 15px;
 }
 
+.contact__info-social-link {
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    svg {
+      @include hover;
+      fill: $red;
+    }
+  }
+}
+
 .contact__info-description {
   margin: 0 0 18px;
   color: $grey-text-form;
 }
 
 .contact__info-tel {
+  @include not-hover;
   display: block;
   // margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+  }
 }
 
 .contact__info-street {
