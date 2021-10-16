@@ -35,6 +35,11 @@
     border: 1px solid $black-tags-border;
   }
 
+  &--contact {
+    width: 22%;
+    padding: 6px 43px;
+  }
+
   // @include viewport--av {
   //   @include font(18, 22);
   //   padding: 10px 20px;

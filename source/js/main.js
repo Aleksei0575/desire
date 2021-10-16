@@ -97,12 +97,20 @@ $(function () {
     autoplay: true,
   });
 
+  $('.contact-gallery__slider').slick({
+    slidesToShow: 10,
+		slidesToScroll: 10,
+    dots: true,
+    arrows: false,
+    // variableWidth: true,
+    // autoplay: true,
+  });
+
   let mixer = mixitup('.page-gallery__inner', {
     load: {
         filter: '.category-living'
     }
   });
-
 
 });
 'use strict';

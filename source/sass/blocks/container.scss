@@ -27,6 +27,11 @@
     padding: 0;
   }
 
+  // &--contact {
+  //   max-width: 1850px;
+  //   padding: 0;
+  // }
+
   @include viewport--lav {
     padding: 0 50px;
   }
