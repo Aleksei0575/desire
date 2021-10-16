@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Desire</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!--Блок подключения спрайта-->
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <!--ХЕДЕР-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="menu menu--right">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.png" alt="Logo">
+        </a>
+        <nav class="menu menu--left">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" type="button" aria-label="Open">
+          <svg width="37" height="29">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="rightside-menu rightside-menu--js">
+          <button class="rightside-menu__close" type="button" aria-label="Close">
+            <svg width="26" height="26">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+          <div class="rightside-menu__wrapper">
+            <a class="rightside-menu__logo" href="#">
+              <img class="rightside-menu__logo-img" src="img/rightside-logo.png" alt="Logo menu">
+            </a>
+            <h2 class="rightside-menu__title">
+              Furniture for life
+            </h2>
+            <p class="rightside-menu__description">
+              Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art
+              party microdosing, put a bird on it brooklyn
+            </p>
+            <img class="rightside-menu__image" src="img/content/menu-image.jpg" alt="Menu Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrambs">
+      <div class="container">
+        <ul class="breadcrambs__list">
+          <li class="breadcrambs__item">
+            <a class="breadcrambs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrambs__item">
+            <a class="breadcrambs__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="contact">
+      <h1 class="visually-hidden">Our contacts</h1>
+      <div class="container container--fluid">
+        <div class="contact__map">
+          <h2 class="contact__map-title visually-hidden">We are on the map</h2>
+          <img class="contact__map-img" src="img/contact/map-img.jpg" alt="Map image">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25221.612627795756!2d-122.4375548880406!3d37.797032844158565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580ee182dddad%3A0xad297a3676772ac4!2zMTc1MCBUYXlsb3IgU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTMzLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1633941086452!5m2!1sru!2sua"
+            width="1870" height="575" style="border:0;" allowfullscreen="">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact__info">
+        <div class="container">
+          <h2 class="contact__info-title">Contact Us</h2>
+          <div class="contact__info-inner">
+            <ul class="contact__info-social-icons">
+              <li class="contact__info-social-icon">
+                <a class="contact__info-social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__info-social-icon">
+                <a class="contact__info-social-link" href="#">
+                  <svg width="14" height="15">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__info-social-icon">
+                <a class="contact__info-social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__info-social-icon">
+                <a class="contact__info-social-link" href="#">
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__info-social-icon">
+                <a class="contact__info-social-link" href="#">
+                  <svg width="18" height="12">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="contact__info-description">
+              Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street
+              art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack
+              normcore. Lo-fi pop-up banjo portland, echo park hammock
+            </p>
+            <a class="contact__info-tel" href="tel:+14158297934">(415) 829-7934</a>
+            <span class="contact__info-street">725 Green St</span>
+            <p class="contact__info-city">San Francisco, California(CA), 94133</p>
+            <a class="contact__info-email" href="mailto:ouremailaddress@email.com">
+              <svg width="16" height="12">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+              ouremailaddress@email.com
+            </a>
+            <form class="contact__info-form form" action="#" method="POST">
+              <div class="form__item form__item--contact form__item-name">
+                <label class="visually-hidden" for="name">name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form__item form__item--contact form__item-email">
+                <label class="visually-hidden" for="email">e-mail</label>
+                <input id="email" type="email" name="email" placeholder="Your e-mail" required>
+              </div>
+              <div class="form__item form__item--contact form__item-text">
+                <label class="visually-hidden" for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              </div>
+              <button class="form__btn button button--dark button--contact" type="submit">Send</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-gallery">
+      <div class="container container--fluid">
+        <h2 class="contact-gallery__title visually-hidden">Our works</h2>
+        <div class="contact-gallery__slider">
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-1.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-2.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-3.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-4.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-5.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-6.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-7.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-8.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-9.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-10.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-1.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-2.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-3.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-4.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-5.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-6.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-7.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-8.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-9.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-10.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-1.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-2.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-3.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-4.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-5.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-6.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-7.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-8.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-9.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-gallery__item">
+            <a class="contact-gallery__link" href="#">
+              <img class="contact-gallery__img" src="img/contact/slide-img-10.jpg" alt="Image interior">
+              <div class="contact-gallery__hover-block">
+                <h3 class="contact-gallery__title">Truffaut literally trust</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--ФУТЕР-->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__wrapper container">
+        <div class="footer__contacts">
+          <h3 class="footer__title">Contact Us</h3>
+          <p class="footer__text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz&nbsp;you
+            probably occupy
+          </p>
+          <a class="footer__email" href="mailto:ouremailaddress@email.com">
+            <svg width="16" height="12">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            ouremailaddress@email.com
+          </a>
+          <form class="footer__form form" action="#" method="POST">
+            <div class="form__item">
+              <label class="visually-hidden" for="email">e-mail</label>
+              <input id="email" type="email" name="email" placeholder="Subscribe by email" required>
+            </div>
+            <button class="form__btn button button--dark" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="14" height="15">
+                  <use xlink:href="#icon-inst"></use>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-pinterest"></use>
+                </svg>
+                Pinterest
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="14" height="14">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="18" height="12">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+                Youtube
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__other">
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                Delivery
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                Help
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                More About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__bottom-text">
+          674 Gonzales Drive.&emsp;&emsp;Washington, PA 15301
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="js/plugins/slick.min.js"></script> -->
+  <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
