@@ -106,6 +106,17 @@ $(function () {
     // autoplay: true,
   });
 
+  $('.article-slider__box').slick({
+    prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="img/sprite/icon-arrow-left.svg" alt="icon left"></img></button>',
+    nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="img/sprite/icon-arrow-right.svg" alt="icon right"></img></button>',
+    // slidesToShow: 10,
+		// slidesToScroll: 10,
+    // dots: true,
+    // arrows: false,
+    // variableWidth: true,
+    // autoplay: true,
+  });
+
   let mixer = mixitup('.page-gallery__inner', {
     load: {
         filter: '.category-living'

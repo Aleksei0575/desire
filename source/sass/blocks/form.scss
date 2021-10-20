@@ -2,6 +2,28 @@
   width: 105%;
   display: flex;
   justify-content: space-between;
+
+  &--blog {
+    margin-bottom: 44px;
+
+    .form__btn {
+      position: absolute;
+      top: 7px;
+      right: 32px;
+      width: 6%;
+
+      svg {
+        fill: $grey;
+      }
+    }
+
+    input[type=search]:hover + .form__btn,
+    input[type=search]:focus + .form__btn {
+      svg {
+        fill: $red;
+      }
+    }
+  }
 }
 
 .form__item {
@@ -18,9 +40,10 @@
     caret-color: #383636;
     appearance: none;
     @include not-hover;
+    cursor: pointer;
 
     &::placeholder {
-      @include font (16, 27);
+      @include font(16, 27);
       color: $grey-text-form;
     }
 
@@ -49,7 +72,7 @@
     @include not-hover;
 
     &::placeholder {
-      @include font (16, 27);
+      @include font(16, 27);
       color: $grey-text-form;
     }
 
@@ -73,6 +96,20 @@
 
     textarea {
       padding: 15px 10px 10px 14px;
+    }
+  }
+
+  &--blog {
+    input {
+      width: 96%;
+      padding: 10px 30px 10px 18px;
+    }
+
+    button {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
     }
   }
 }

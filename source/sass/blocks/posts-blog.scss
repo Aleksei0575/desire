@@ -1,0 +1,34 @@
+.posts-blog {
+  margin-bottom: 52px;
+}
+
+.posts-blog__title {
+  @include font(16, 23);
+  @include montserrat-b;
+  margin: 0 0 24px;
+  color: $black;
+}
+
+.posts-blog__list {
+  @include list-reset;
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.posts-blog__item {
+  margin-bottom: 10px;
+}
+
+.posts-blog__item-link {
+  color: $grey;
+}
+
+.posts-blog__item-title {
+  margin: 0;
+}
+
+.posts-blog__item-links-box {
+  color: $grey-text-form;
+}

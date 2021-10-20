@@ -40,6 +40,12 @@
     padding: 6px 43px;
   }
 
+  &--blog {
+    @include font(14, 26);
+    width: auto;
+    padding: 0 16px;
+  }
+
   // @include viewport--av {
   //   @include font(18, 22);
   //   padding: 10px 20px;
