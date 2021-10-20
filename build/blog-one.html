@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Desire</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
 
-    <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <!--Блок подключения спрайта-->
-    <div style="display: none;">
-      <svg xmlns="http://www.w3.org/2000/svg"><defs>
+<head>
+  <meta charset="UTF-8">
+  <title>Desire</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!--Блок подключения спрайта-->
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg"><defs>
 <filter id="filter0_d" x="26.75" y="21.343" width="36.25" height="40.314" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
@@ -25,10 +27,18 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
 </filter>
-</defs><symbol id="icon-arrow-left" viewBox="0 0 101 8">
-<path d="M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101 4.5H1V3.5H101V4.5Z" fill="white"></path>
-</symbol><symbol id="icon-arrow-right" viewBox="0 0 101 8">
-<path d="M100.354 4.35355C100.549 4.15829 100.549 3.84171 100.354 3.64645L97.1716 0.464466C96.9763 0.269204 96.6597 0.269204 96.4645 0.464466C96.2692 0.659728 96.2692 0.976311 96.4645 1.17157L99.2929 4L96.4645 6.82843C96.2692 7.02369 96.2692 7.34027 96.4645 7.53553C96.6597 7.7308 96.9763 7.7308 97.1716 7.53553L100.354 4.35355ZM0 4.5H100V3.5H0L0 4.5Z" fill="white"></path>
+</defs><symbol id="icon-arrow-back" viewBox="0 0 6 12">
+<g opacity="0.700126">
+<path d="M0.126589 6.3293L5.26514 11.8643C5.4335 12.0455 5.70608 12.0452 5.87415 11.8634C6.0421 11.6815 6.04167 11.3869 5.87329 11.2055L1.0406 5.99998L5.87346 0.794435C6.04182 0.613029 6.04225 0.318631 5.87433 0.136757C5.79007 0.0455856 5.67969 0 5.56931 0C5.45921 0 5.34927 0.0452805 5.26516 0.135819L0.126589 5.67068C0.0455022 5.75782 0 5.87642 0 5.99998C0 6.12354 0.0456324 6.24199 0.126589 6.3293Z" fill="black"></path>
+</g>
+</symbol><symbol id="icon-arrow-left" viewBox="0 0 10 17">
+<path d="M0.470814 7.29199C0.555523 7.206 0.647415 7.13343 0.744097 7.07031L7.21188 0.481925C7.84285 -0.16054 8.86654 -0.160845 9.49781 0.48223C10.1291 1.125 10.1291 2.16752 9.49781 2.8109L3.9277 8.48514L9.52655 14.189C10.1578 14.8317 10.1578 15.8739 9.52655 16.5176C9.21076 16.8396 8.79679 17 8.38373 17C7.97066 17 7.5564 16.8396 7.24091 16.5176L0.744097 9.89874C0.647415 9.83562 0.554924 9.76305 0.470814 9.67706C0.148144 9.34836 -0.00750451 8.91538 0.000277895 8.48453C-0.00750451 8.05367 0.148144 7.62099 0.470814 7.29199Z" fill="black"></path>
+</symbol><symbol id="icon-arrow-next" viewBox="0 0 6 12">
+<g opacity="0.700126">
+<path d="M5.87341 5.6707L0.734858 0.1357C0.5665 -0.0455414 0.293923 -0.0452368 0.125846 0.136638C-0.0421 0.318488 -0.0416661 0.613073 0.126714 0.794455L4.9594 6.00002L0.126541 11.2056C-0.041818 11.387 -0.0422519 11.6814 0.125673 11.8632C0.209928 11.9544 0.320308 12 0.430689 12C0.540787 12 0.650733 11.9547 0.734837 11.8642L5.87341 6.32932C5.9545 6.24218 6 6.12358 6 6.00002C6 5.87646 5.95437 5.75801 5.87341 5.6707Z" fill="black"></path>
+</g>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 10 17">
+<path d="M9.52862 7.29242C9.44481 7.20643 9.35202 7.13386 9.25564 7.07074L2.78769 0.481933C2.15643 -0.160543 1.13336 -0.160848 0.501805 0.482238C-0.129455 1.12502 -0.129455 2.16756 0.501805 2.81095L6.0724 8.48529L0.47367 14.1895C-0.15789 14.832 -0.15789 15.8748 0.47367 16.5182C0.789449 16.8393 1.20281 17 1.61616 17C2.02952 17 2.44378 16.8393 2.75866 16.5176L9.25564 9.89983C9.35202 9.83671 9.44451 9.76445 9.52862 9.67815C9.85188 9.34883 10.0069 8.91645 9.99974 8.48529C10.0072 8.05382 9.85188 7.62083 9.52862 7.29242Z" fill="black"></path>
 </symbol><symbol id="icon-close" viewBox="0 0 26 26">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4364 13.0001L25.7025 1.73384C26.0992 1.33718 26.0992 0.69409 25.7025 0.297489C25.3059 -0.0991123 24.6628 -0.0991631 24.2662 0.297489L13 11.5637L1.73383 0.297489C1.33718 -0.0991631 0.694089 -0.0991631 0.297488 0.297489C-0.099112 0.694141 -0.0991628 1.33723 0.297488 1.73384L11.5636 13L0.297488 24.2662C-0.0991628 24.6629 -0.0991628 25.306 0.297488 25.7026C0.495789 25.9009 0.755737 26 1.01569 26C1.27563 26 1.53553 25.9009 1.73388 25.7026L13 14.4364L24.2661 25.7026C24.4644 25.9009 24.7244 26 24.9843 26C25.2443 26 25.5042 25.9009 25.7025 25.7026C26.0992 25.3059 26.0992 24.6628 25.7025 24.2662L14.4364 13.0001Z" fill="#363838"></path>
 </symbol><symbol id="icon-email" viewBox="0 0 16 12">
@@ -58,6 +68,8 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M58.5 39.634C59.1667 40.0189 59.1667 40.9811 58.5 41.366L32.25 56.5215C31.5833 56.9064 30.75 56.4252 30.75 55.6554L30.75 25.3446C30.75 24.5748 31.5833 24.0936 32.25 24.4785L58.5 39.634Z" fill="white" fill-opacity="0.93"></path>
 </g>
 
+</symbol><symbol id="icon-search" viewBox="0 0 17 17">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9579 10.9565L16.7923 15.7909C17.0692 16.0678 17.0692 16.5155 16.7923 16.7924C16.6542 16.9306 16.4729 17 16.2915 17C16.1101 17 15.9288 16.9306 15.7907 16.7924L10.9564 11.9581C9.7997 12.8945 8.32991 13.4583 6.7291 13.4583C3.01889 13.4583 0 10.4394 0 6.72914C0 3.01889 3.01886 0 6.72907 0C10.4393 0 13.4582 3.01893 13.4582 6.72918C13.4582 8.33 12.8944 9.7998 11.9579 10.9565ZM1.41666 6.72914C1.41666 9.65882 3.79946 12.0416 6.7291 12.0416C9.65872 12.0416 12.0415 9.65882 12.0415 6.72914C12.0415 3.79947 9.65875 1.41664 6.7291 1.41664C3.79946 1.41664 1.41666 3.79947 1.41666 6.72914Z"></path>
 </symbol><symbol id="icon-sofa" viewBox="0 0 38 34">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7416 9.63027H36.3301C37.2509 9.63027 38 10.4676 38 11.4969V23.0395C38 24.755 36.7515 26.1506 35.2168 26.1506H33.4832V32.2521C33.4832 33.2158 32.7817 34 31.9194 34C31.1027 34 30.4175 33.2866 30.3596 32.3759L29.9637 26.1505H13.8053C13.4979 26.1505 13.2486 25.8719 13.2486 25.5283C13.2486 25.1847 13.4979 24.9061 13.8053 24.9061H35.2167C36.1376 24.9061 36.8866 24.0687 36.8866 23.0394V11.4968C36.8866 11.1537 36.637 10.8746 36.33 10.8746H34.0398C33.7713 10.8746 33.5466 11.0882 33.4946 11.3716C33.4871 11.412 33.4832 11.4539 33.4832 11.4968V14.4762H34.3797C35.1277 14.4762 35.7363 15.1565 35.7363 15.9927V19.5853C35.7363 20.4215 35.1277 21.1018 34.3797 21.1018H3.62032C2.87227 21.1018 2.26367 20.4216 2.26367 19.5854V15.9928C2.26367 15.1566 2.87227 14.4763 3.62032 14.4763H4.51673V11.4969C4.51673 11.454 4.5128 11.4121 4.50537 11.3716C4.45342 11.0884 4.22861 10.8747 3.96009 10.8747H1.66992C1.36295 10.8747 1.11328 11.1538 1.11328 11.4969V23.0394C1.11328 24.0687 1.86237 24.9061 2.7832 24.9061H11.2077C11.5151 24.9061 11.7643 25.1847 11.7643 25.5283C11.7643 25.8719 11.5151 26.1505 11.2077 26.1505H8.03618L7.64023 32.3759C7.58234 33.2866 6.89715 34 6.08045 34C5.21825 34 4.51673 33.2159 4.51673 32.2521V26.1506H2.7832C1.24851 26.1506 0 24.755 0 23.0395V11.4969C0 10.4676 0.74909 9.63027 1.66992 9.63027H2.2584V2.86218C2.2584 1.284 3.40709 0 4.81895 0H16.9961C17.807 0 18.5305 0.424017 19 1.08356C19.4695 0.424017 20.193 0 21.0039 0H33.181C34.431 0 35.4922 0.998028 35.7043 2.37328C35.7565 2.71193 35.5532 3.03374 35.2503 3.09215C34.9472 3.15038 34.6594 2.92332 34.6072 2.58467C34.4874 1.80798 33.8877 1.24442 33.181 1.24442H21.0038C20.2058 1.24442 19.5566 1.97017 19.5566 2.86218V14.5007L19.5664 14.4986L19.5817 14.4951C19.6767 14.4733 19.7767 14.4734 24.7254 14.4749H24.7258H24.7261H24.7264H24.727H24.7278H24.7287C26.5441 14.4755 29.0116 14.4763 32.3699 14.4763V11.4969C32.3699 10.4676 33.119 9.63027 34.0398 9.63027H34.6283V5.38064C34.6283 5.03702 34.8775 4.75843 35.185 4.75843C35.4924 4.75843 35.7416 5.03702 35.7416 5.38064V9.63027ZM6.67484 32.2862L7.00971 26.122H5.90291V32.2504C5.90291 32.5292 6.07624 32.7561 6.28936 32.7561C6.4912 32.7561 6.66052 32.5497 6.67484 32.2862ZM34.6796 19.6298C34.6796 19.7802 34.57 19.9024 34.4353 19.9024H19.5534V18.2513V16.0287C19.5534 15.8783 19.663 15.7561 19.7977 15.7561H34.4353C34.57 15.7561 34.6796 15.8784 34.6796 16.0287V19.6298ZM3.32039 9.63735H3.911C4.83516 9.63735 5.58695 10.4754 5.58695 11.5057V14.4878C8.96849 14.4878 11.4515 14.487 13.2767 14.4865H13.2807H13.2808C18.2558 14.485 18.3405 14.4849 18.4198 14.5057C18.4274 14.5077 18.4349 14.5098 18.4466 14.5122V2.86312C18.4466 1.97031 17.795 1.2439 16.9941 1.2439H4.77288C3.972 1.2439 3.32039 1.97031 3.32039 2.86312V9.63735ZM3.32039 19.6299V16.0288C3.32039 15.8784 3.43 15.7561 3.56472 15.7561H18.2023C18.337 15.7561 18.4466 15.8784 18.4466 16.0288V18.2514V19.9024H3.56472C3.43 19.9024 3.32039 19.7802 3.32039 19.6299ZM31.7106 32.7561C31.9237 32.7561 32.0971 32.5293 32.0971 32.2504V26.122H30.9903L31.3251 32.2862C31.3395 32.5497 31.5088 32.7561 31.7106 32.7561Z" fill="black"></path>
 </symbol><symbol id="icon-whatsapp" viewBox="0 0 14 14">
@@ -65,179 +77,327 @@
 </symbol><symbol id="icon-youtube" viewBox="0 0 18 12">
 <path d="M17.1562 1.90625C16.9688 1.15625 16.375 0.5625 15.6562 0.375C14.3125 0 9 0 9 0C9 0 3.65625 0 2.3125 0.375C1.59375 0.5625 1 1.15625 0.8125 1.90625C0.4375 3.21875 0.4375 6.03125 0.4375 6.03125C0.4375 6.03125 0.4375 8.8125 0.8125 10.1562C1 10.9062 1.59375 11.4688 2.3125 11.6562C3.65625 12 9 12 9 12C9 12 14.3125 12 15.6562 11.6562C16.375 11.4688 16.9688 10.9062 17.1562 10.1562C17.5312 8.8125 17.5312 6.03125 17.5312 6.03125C17.5312 6.03125 17.5312 3.21875 17.1562 1.90625ZM7.25 8.5625V3.5L11.6875 6.03125L7.25 8.5625Z"></path>
 </symbol></svg>
-    </div>
-    <!--ХЕДЕР-->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <nav class="menu menu--right">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">About</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Gallery</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="logo" href="#">
-            <img class="logo__img" src="img/logo.png" alt="Logo">
-          </a>
-          <nav class="menu menu--left">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Blog</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="header__btn" type="button" aria-label="Open">
-            <svg width="37" height="29">
-              <use xlink:href="#icon-menu"></use>
+  </div>
+  <!--ХЕДЕР-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="menu menu--right">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.png" alt="Logo">
+        </a>
+        <nav class="menu menu--left">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" type="button" aria-label="Open">
+          <svg width="37" height="29">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="rightside-menu rightside-menu--js">
+          <button class="rightside-menu__close" type="button" aria-label="Close">
+            <svg width="26" height="26">
+              <use xlink:href="#icon-close"></use>
             </svg>
           </button>
-          <div class="rightside-menu rightside-menu--js">
-            <button class="rightside-menu__close" type="button" aria-label="Close">
-              <svg width="26" height="26">
-                <use xlink:href="#icon-close"></use>
-              </svg>
-            </button>
-            <div class="rightside-menu__wrapper">
-              <a class="rightside-menu__logo" href="#">
-                <img class="rightside-menu__logo-img" src="img/rightside-logo.png" alt="Logo menu">
-              </a>
-              <h2 class="rightside-menu__title">
-                Furniture for life
-              </h2>
-              <p class="rightside-menu__description">
-                Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
-              </p>
-              <img class="rightside-menu__image" src="img/content/menu-image.jpg" alt="Menu Image">
-            </div>
+          <div class="rightside-menu__wrapper">
+            <a class="rightside-menu__logo" href="#">
+              <img class="rightside-menu__logo-img" src="img/rightside-logo.png" alt="Logo menu">
+            </a>
+            <h2 class="rightside-menu__title">
+              Furniture for life
+            </h2>
+            <p class="rightside-menu__description">
+              Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art
+              party microdosing, put a bird on it brooklyn
+            </p>
+            <img class="rightside-menu__image" src="img/content/menu-image.jpg" alt="Menu Image">
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="breadcrambs">
-        <div class="container">
-          <ul class="breadcrambs__list">
-            <li class="breadcrambs__item">
-              <a class="breadcrambs__link" href="#">Home</a>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrambs">
+      <div class="container">
+        <ul class="breadcrambs__list">
+          <li class="breadcrambs__item">
+            <a class="breadcrambs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrambs__item">
+            <a class="breadcrambs__link" href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="blog">
+      <h1 class="blog__title visually-hidden">Our blog</h1>
+      <div class="container">
+        <div class="blog__wrapper">
+          <div class="blog__items">
+
+          </div>
+          <aside class="blog__aside aside">
+
+            <form class="aside__form form form--blog" action="#" method="POST">
+              <div class="form__item form__item--blog">
+                <label class="visually-hidden" for="search">search</label>
+                <input id="search" type="search" name="search" placeholder="Search" required="">
+                <button class="form__btn form__btn--blog button" type="submit">
+                  <svg width="17" height="17">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+
+            <div class="aside__category">
+              <h3 class="aside__category-title">Categories</h3>
+              <ul class="aside__category-list">
+                <li class="aside__category-item">
+                  <a class="aside__category-link" href="#">
+                    Dining room (1)
+                  </a>
+                </li>
+                <li class="aside__category-item">
+                  <a class="aside__category-link" href="#">
+                    Office furniture (12)
+                  </a>
+                </li>
+                <li class="aside__category-item">
+                  <a class="aside__category-link" href="#">
+                    Simple interiror design (2)
+                  </a>
+                </li>
+                <li class="aside__category-item">
+                  <a class="aside__category-link" href="#">
+                    Design (4)
+                  </a>
+                </li>
+                <li class="aside__category-item">
+                  <a class="aside__category-link" href="#">
+                    Bedroom Furniture (1)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="aside__posts posts-blog">
+              <h3 class="posts-blog__title">Recent Posts</h3>
+              <ul class="posts-blog__list">
+                <li class="posts-blog__item">
+                  <a class="posts-blog__item-link" href="#">
+                    <h4 class="posts-blog__item-title">
+                      Cred selfies edison bulb four dollar toast humblebrag
+                    </h4>
+                  </a>
+                  <div class="posts-blog__item-links-box">
+                    <time class="posts-blog__item-date" datetime="2020-08-10">August 10, 2020</time> |
+                    <a class="posts-blog__item-link-author" href="#">by Ann Summers</a>
+                  </div>
+                </li>
+                <li class="posts-blog__item">
+                  <a class="posts-blog__item-link" href="#">
+                    <h4 class="posts-blog__item-title">
+                      Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+                    </h4>
+                  </a>
+                  <div class="posts-blog__item-links-box">
+                    <time class="posts-blog__item-date" datetime="2020-09-30">September 30,2020</time> |
+                    <a class="posts-blog__item-link-author" href="#">by Ann Summers</a>
+                  </div>
+                </li>
+                <li class="posts-blog__item">
+                  <a class="posts-blog__item-link" href="#">
+                    <h4 class="posts-blog__item-title">
+                      Cred selfies edison bulb four dollar toast humblebrag
+                    </h4>
+                  </a>
+                  <div class="posts-blog__item-links-box">
+                    <time class="posts-blog__item-date" datetime="2020-09-30">May 2, 2020</time> |
+                    <a class="posts-blog__item-link-author" href="#">by Ann Summers</a>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="aside__tags">
+              <h3 class="aside__tags-title">Tags</h3>
+              <div class="aside__btn-block">
+                <a class="aside__btn button button--blog button--light" href="#">Dining room futniture</a>
+                <a class="aside__btn button button--blog button--light" href="#">Chair</a>
+                <a class="aside__btn button button--blog button--light" href="#">Table</a>
+                <a class="aside__btn button button--blog button--light" href="#">Bedroom</a>
+                <a class="aside__btn button button--blog button--light" href="#">Office Furniture</a>
+              </div>
+            </div>
+
+            <ul class="aside__social-icons">
+              <li class="aside__social-icon">
+                <a class="aside__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="aside__social-icon">
+                <a class="aside__social-link" href="#">
+                  <svg width="14" height="15">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="aside__social-icon">
+                <a class="aside__social-link" href="#">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="aside__social-icon">
+                <a class="aside__social-link" href="#">
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="aside__social-icon">
+                <a class="aside__social-link" href="#">
+                  <svg width="18" height="12">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--ФУТЕР-->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__wrapper container">
+        <div class="footer__contacts">
+          <h3 class="footer__title">Contact Us</h3>
+          <p class="footer__text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz&nbsp;you
+            probably occupy
+          </p>
+          <a class="footer__email" href="mailto:ouremailaddress@email.com">
+            <svg width="16" height="12">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            ouremailaddress@email.com
+          </a>
+          <form class="footer__form form" action="#" method="POST">
+            <div class="form__item">
+              <label class="visually-hidden" for="email">e-mail</label>
+              <input id="email" type="email" name="email" placeholder="Subscribe by email" required="">
+            </div>
+            <button class="form__btn button button--dark" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                Facebook
+              </a>
             </li>
-            <li class="breadcrambs__item">
-              <a class="breadcrambs__link" href="#">About</a>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="14" height="15">
+                  <use xlink:href="#icon-inst"></use>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-pinterest"></use>
+                </svg>
+                Pinterest
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="14" height="14">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg width="18" height="12">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+                Youtube
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__other">
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                Delivery
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                Help
+              </a>
+            </li>
+            <li class="footer__other-item">
+              <a class="footer__other-link" href="#">
+                More About Us
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    </main>
-
-    <!--ФУТЕР-->
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__wrapper container">
-          <div class="footer__contacts">
-            <h3 class="footer__title">Contact Us</h3>
-            <p class="footer__text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz&nbsp;you probably occupy
-            </p>
-            <a class="footer__email" href="mailto:ouremailaddress@email.com">
-              <svg width="16" height="12">
-                <use xlink:href="#icon-email"></use>
-              </svg>
-              ouremailaddress@email.com
-            </a>
-            <form class="footer__form form" action="#" method="POST">
-              <div class="form__item">
-                <label class="visually-hidden" for="email">e-mail</label>
-                <input id="email" type="email" name="email" placeholder="Subscribe by email" required="">
-              </div>
-              <button class="form__btn button button--dark" type="submit">Send</button>
-            </form>
-          </div>
-          <div class="footer__links">
-            <ul class="footer__social">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="16" height="16">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
-                  Facebook
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="14" height="15">
-                    <use xlink:href="#icon-inst"></use>
-                  </svg>
-                  Instagram
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="16" height="16">
-                    <use xlink:href="#icon-pinterest"></use>
-                  </svg>
-                  Pinterest
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="14" height="14">
-                    <use xlink:href="#icon-whatsapp"></use>
-                  </svg>
-                  WhatsApp
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="18" height="12">
-                    <use xlink:href="#icon-youtube"></use>
-                  </svg>
-                  Youtube
-                </a>
-              </li>
-            </ul>
-            <ul class="footer__other">
-              <li class="footer__other-item">
-                <a class="footer__other-link" href="#">
-                  Delivery
-                </a>
-              </li>
-              <li class="footer__other-item">
-                <a class="footer__other-link" href="#">
-                  FAQ
-                </a>
-              </li>
-              <li class="footer__other-item">
-                <a class="footer__other-link" href="#">
-                  Help
-                </a>
-              </li>
-              <li class="footer__other-item">
-                <a class="footer__other-link" href="#">
-                  More About Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__bottom-text">
+          674 Gonzales Drive.&emsp;&emsp;Washington, PA 15301
+        </p>
       </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <p class="footer__bottom-text">
-            674 Gonzales Drive.&emsp;&emsp;Washington, PA 15301
-          </p>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="js/plugins/slick.min.js"></script> -->
-    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="js/plugins/slick.min.js"></script> -->
+  <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

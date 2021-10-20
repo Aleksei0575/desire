@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__list {
+  @include list-reset;
+  display: flex;
+}
+
+.pagination__item {
+  margin: 0 6px;
+}
+
+.pagination__arrow {
+  display: inline block;
+  margin: 0 6px;
+
+  &--disabled {
+    display: none;
+  }
+}
+
+.pagination__link {
+  @include font(14, 28);
+  @include sans-b;
+  color: #707070;
+
+  &--active {
+    color: $red;
+  }
+}
+
+
