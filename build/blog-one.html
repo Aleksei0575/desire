@@ -98,7 +98,7 @@
         <nav class="menu menu--left">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#">Blog</a>
+              <a class="menu__link menu__link--active" href="blog.html">Blog</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="contact.html">Contact</a>
@@ -143,16 +143,118 @@
           <li class="breadcrambs__item">
             <a class="breadcrambs__link" href="#">Blog</a>
           </li>
+          <li class="breadcrambs__item">
+            <a class="breadcrambs__link" href="#">Single Post</a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <section class="blog">
+    <section class="blog blog-one">
       <h1 class="blog__title visually-hidden">Our blog</h1>
       <div class="container">
         <div class="blog__wrapper">
           <div class="blog__items">
+            <div class="blog__item blog-one__item">
+              <img class="blog__item-img" src="img/blog/blog-one.jpg" alt="Blog Image">
+              <div class="blog__item-links-box">
+                <time class="blog__item-date" datetime="2020-08-15">August 15, 2020</time> |
+                <a class="blog__item-author" href="#">by Ann Summers</a> |
+                <a class="blog__item-theme" href="#">Bedroom Furniture</a>
+              </div>
+              <h2 class="blog__item-title">
+                <a class="blog__item-link-title" href="blog-one.html">
+                  Red selfies edison bulb four dollar toast design humblebrag for the furniture
+                </a>
+              </h2>
+              <div class="blog-one__text">
+                <p>
+                  Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy
+                  pabst enamel pin edison bulb farm-to-table.
+                </p>
+                <p>
+                  Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray
+                  stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo
+                  santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+                </p>
 
+                <blockquote>
+                  <p>
+                    "Simplicity is not the goal. It is the by-product of a good idea&nbsp;and modest expectations"
+                  </p>
+                  <footer>
+                    <cite>Paul Rand</cite>
+                  </footer>
+                </blockquote>
+
+                <p>
+                  Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+                </p>
+                <p>
+                  Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+                </p>
+              </div>
+
+              <div class="blog-one__item-tags">
+                <h3>Tags</h3>
+                <div>
+                  <a href="#">Bedroom furniture</a>
+                  <a href="#">Office furniture</a>
+                  <a href="#">Dining room futniture</a>
+                  <a href="#">Chair</a>
+                </div>
+              </div>
+
+              <div class="blog-one__posts">
+                <a class="blog-one__prew" href="#">
+                  Cred selfies edison bulb four dollar toast humblebrag
+                </a>
+                <a class="blog-one__next" href="#">
+                  Semiotics fixie four dollar toast, next level
+                </a>
+              </div>
+
+              <div class="blog-one__coments">
+                <h3>Comments:</h3>
+                <div class="blog-one__coments-item">
+                  <img src="img/blog/avatar.png" alt="Avatar Image">
+                  <div class="blog-one__coments-info">
+                    <h4>Lea Brown</h4>
+                    <time datetime="2020-08-12">August 12, 2020</time>
+                    <p>
+                      Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+                    </p>
+                  </div>
+                  <button type="button">Reply</button>
+                </div>
+              </div>
+
+              <div class="blog-one__form">
+                <h4>Post a Comment</h4>
+
+                <form class="blog-one__form-submit form" action="#" method="POST">
+                  <div class="form__item form__item--blog form__item-text">
+                    <label class="visually-hidden" for="message">Your message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required=""></textarea>
+                  </div>
+                  <div class="form__item form__item--blog form__item-name">
+                    <label class="visually-hidden" for="name">name</label>
+                    <input id="name" type="text" name="name" placeholder="Your name" required="">
+                  </div>
+                  <div class="form__item form__item--blog form__item-email">
+                    <label class="visually-hidden" for="email">e-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Your e-mail" required="">
+                  </div>
+                  <div class="form__item form__item-consent">
+                    <input class="visually-hidden" id="consent" type="checkbox" name="consent" checked="" required="">
+                    <label for="consent">Remember me</label>
+                    <span id="tooltip"></span>
+                  </div>
+                  <button class="form__btn button button--dark button--contact" type="submit">Submit</button>
+                </form>
+              </div>
+
+            </div>
           </div>
           <aside class="blog__aside aside">
 

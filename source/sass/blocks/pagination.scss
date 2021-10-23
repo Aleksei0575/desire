@@ -18,7 +18,9 @@
   margin: 0 6px;
 
   &--disabled {
-    display: none;
+    // display: none;
+    opacity: 0;
+    pointer-events: none
   }
 }
 

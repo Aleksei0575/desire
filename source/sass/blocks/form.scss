@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   &--blog {
-    margin-bottom: 44px;
+    margin-bottom: 41px;
 
     .form__btn {
       position: absolute;
@@ -17,8 +17,8 @@
       }
     }
 
-    input[type=search]:hover + .form__btn,
-    input[type=search]:focus + .form__btn {
+    input[type="search"]:hover + .form__btn,
+    input[type="search"]:focus + .form__btn {
       svg {
         fill: $red;
       }
@@ -100,6 +100,8 @@
   }
 
   &--blog {
+    margin-bottom: 4px;
+
     input {
       width: 96%;
       padding: 10px 30px 10px 18px;
@@ -128,4 +130,64 @@
   input {
     width: 100%;
   }
+}
+
+.form__item-consent {
+  margin: 4px 0 21px;
+
+  label {
+    position: relative;
+    display: block;
+    margin-top: 9px;
+    padding-left: 32px;
+
+    @include font(14, 28);
+
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      @include pseudo-elem;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 21px;
+      border: 1px solid $black;
+    }
+
+    &::after {
+      @include pseudo-elem;
+      top: 44%;
+      left: 8px;
+      display: none;
+      width: 6px;
+      height: 12px;
+      border: 1px solid $black;
+      border-left: none;
+      border-top: none;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    // &:hover,
+    // &:focus {
+    //   color: $red;
+    // }
+  }
+
+  // span {
+  //   @include pseudo-elem;
+  //   bottom: 160px;
+  //   right: 440px;
+  //   background-color: $red;
+  //   color: #000000;
+  // }
+}
+
+.form__item-consent input[type="checkbox"]:checked ~ label::after {
+  display: block;
+}
+
+.form__item-consent input[type="checkbox"]:focus ~ label::before {
+  background-color: rgba($yellow, 0.5);
 }
