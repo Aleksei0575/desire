@@ -11,10 +11,32 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @media (max-width: 1474px) {
+    min-height: auto;
+    height: auto;
+    background-size: cover;
+  }
+
+  @media (max-width: 1174px) {
+    padding-top: 80px;
+  }
+
+  @include viewport--md {
+    margin-bottom: 40px;
+  }
+
+  @include viewport--sm {
+    padding-top: 40px;
+  }
 }
 
 .installation__inner {
   width: 49%;
+
+  @include viewport--sav {
+    width: 100%;
+  }
 }
 
 .installation__title {
@@ -36,6 +58,14 @@
     width: 200px;
     height: 1px;
     background-color: $grey-line;
+  }
+
+  @include viewport--sm {
+    @include font(36, 51);
+  }
+
+  @include viewport--xs {
+    @include font(25, 40);
   }
 }
 

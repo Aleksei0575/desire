@@ -1,8 +1,26 @@
 .menu {
   width: 16.9%;
 
+  @include viewport--av {
+    width: 25%;
+  }
+
   &--right {
     margin-left: 3%;
+
+    @include viewport--av {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  &--left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include viewport--sav {
+    display: none;
   }
 }
 

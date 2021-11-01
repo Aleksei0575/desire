@@ -1,20 +1,23 @@
 .breadcrambs {
   padding: 14px 0 14px;
   background: rgba($grey-bg, 0.5);
+  // position: relative;
 }
 
 .breadcrambs__list {
   @include list-reset;
   display: flex;
+  // flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 .breadcrambs__item {
-  // position: relative;
+  position: relative;
+  padding-right: 8px;
 
   &::after {
     content: '/';
-    margin-left: -4px;
-    margin-right: 4px;
+    position: absolute;
   }
 }
 

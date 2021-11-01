@@ -27,6 +27,11 @@
     padding: 3px 43px;
     color: $white;
     background-color: $black;
+
+    @include viewport--sm {
+      padding: 7px 15px;
+      width: 100%;
+    }
   }
 
   &--light {

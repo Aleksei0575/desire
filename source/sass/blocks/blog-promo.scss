@@ -1,23 +1,47 @@
 .blog-promo {
   margin-bottom: 99px;
+
+  @include viewport--sm {
+    margin-bottom: 15px;
+  }
 }
 
-.blog-promo__tile {
+.blog-promo__title {
   @include font(36, 51);
   @include montserrat-b;
   width: 38.7%;
   margin: 0 auto 30px;
   text-align: center;
+
+  color: $black;
+
+  @include viewport--av {
+    width: 100%;
+  }
+
+  @include viewport--xs {
+    @include font(25, 40);
+  }
 }
 
 .blog-promo__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include viewport--sm {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .blog-promo__item {
   width: 48.6%;
+
+  @include viewport--sm {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .blog-promo__item-link {
@@ -35,10 +59,22 @@
   @include font(14, 28);
   @include sans-b;
   margin-bottom: 10px;
+
+  @include viewport--mav {
+    @include font(12, 24);
+  }
+
+  @include viewport--lg {
+    @include font(10, 20);
+  }
 }
 
 .blog-promo__item-title {
   @include font(24, 38);
   @include montserrat-b;
   margin: 0;
+
+  @include viewport--xs {
+    @include font(18, 24);
+  }
 }
