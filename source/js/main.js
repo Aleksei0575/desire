@@ -95,6 +95,36 @@ $(function () {
     arrows: false,
     variableWidth: true,
     autoplay: true,
+
+    responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+          slidesToShow: 1,
+          centerMode: true,
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+          slidesToShow: 1,
+          centerMode: true,
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				}
+			},
+			{
+				breakpoint: 599,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
   });
 
   $('.contact-gallery__slider').slick({
@@ -116,6 +146,19 @@ $(function () {
     // variableWidth: true,
     // autoplay: true,
   });
+
+// === Раскомментировать блок, чтобы включить слайдер ====
+  $('.blog-one__posts').slick({
+    prevArrow: '<button type="button" class="blog-one__posts-arrow blog-one__posts-arrowleft"><img src="img/sprite/icon-arr-prew.svg" alt="icon left"></img></button>',
+    nextArrow: '<button type="button" class="blog-one__posts-arrow blog-one__posts-arrowright"><img src="img/sprite/icon-arr-next.svg" alt="icon right"></img></button>',
+    slidesToShow: 2,
+		slidesToScroll: 2,
+    // dots: true,
+    // arrows: false,
+    // variableWidth: true,
+    // autoplay: true,
+  });
+//========================================================
 
   let mixer = mixitup('.page-gallery__inner', {
     load: {

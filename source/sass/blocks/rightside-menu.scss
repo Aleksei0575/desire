@@ -19,12 +19,30 @@
     // display: none;
     transform: translateY(-400%);
   }
+
+  @include viewport--xl {
+    padding: 10px;
+    max-width: 550px;
+  }
+
+  @include viewport--sav {
+    max-width: 320px;
+  }
 }
 
 .rightside-menu__close {
   @include btn-reset;
   margin-bottom: 60px;
   cursor: pointer;
+
+  @include viewport--xl {
+    margin-bottom: 20px;
+  }
+
+  @include viewport--sav {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .rightside-menu__wrapper {
@@ -36,6 +54,18 @@
 .rightside-menu__logo {
   display: inline-block;
   margin-bottom: 40px;
+
+  @include viewport--xl {
+    margin-bottom: 20px;
+  }
+}
+
+.rightside-menu__logo-img {
+
+  @include viewport--sav {
+    width: 140px;
+    height: auto;
+  }
 }
 
 .rightside-menu__title {
@@ -50,18 +80,84 @@
     content: '';
     width: 252px;
     height: 1px;
-    background-color: #6d7278;
+    background-color: #7f8c9c;
     left: 50%;
     right: 0;
     bottom: 0;
     transform: translateX(-50%);
   }
+
+  @include viewport--sav {
+    @include font(30, 35);
+  }
 }
 
 .rightside-menu__description {
   margin: 0 0 75px;
+
+  @include viewport--xl {
+    margin: 0 0 25px;
+  }
+
+  @include viewport--sav {
+    @include font(16, 24);
+  }
 }
 
 .rightside-menu__image {
   min-width: 485px;
+
+  @include viewport--xl {
+    object-fit: cover;
+  }
+
+  @include viewport--lav {
+    width: 90%;
+    height: auto;
+    min-width: 0;
+  }
+
+  @include viewport--sav {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+.rightside-menu__list {
+  display: none;
+
+  @include viewport--sav {
+    @include list-reset;
+    display: block;
+
+    li:first-child {
+      border-top: 1px solid #7f8c9c;
+    }
+  }
+}
+
+.rightside-menu__item {
+  padding: 8px 5px;
+  border-bottom: 1px solid #7f8c9c;
+
+  @include not-hover;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    background-color: rgba($yellow, 0.5);
+  }
+
+  &:hover a,
+  &:focus a {
+    @include hover;
+    color: $red;
+  }
+}
+
+.rightside-menu__link {
+  @include font(16, 22);
+  @include montserrat-b;
+  display: block;
+  width: 100%;
 }

@@ -15,4 +15,8 @@
   @include btn-reset;
   margin-left: auto;
   cursor: pointer;
+
+  @include viewport--av {
+    margin-left: 0;
+  }
 }

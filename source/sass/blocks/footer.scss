@@ -7,13 +7,33 @@
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 80px;
+
+  @include viewport--sav {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include viewport--sm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .footer__contacts {
   width: 46%;
+
+  @include viewport--av {
+    width: 60%;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
-.footer__title{
+.footer__title {
   @include font(16, 23);
   @include montserrat-b;
   margin: 0;
@@ -45,6 +65,15 @@
   justify-content: space-between;
   width: 35%;
   margin-right: 8%;
+
+  @include viewport--av {
+    margin-right: 0;
+  }
+
+  @include viewport--sav {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .footer__social {
@@ -52,6 +81,17 @@
 
   li:last-child {
     margin-bottom: 0;
+  }
+
+  @include viewport--sav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  @include viewport--sm {
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -67,6 +107,11 @@
     svg {
       fill: $red;
     }
+  }
+
+  @include viewport--sav {
+    margin-bottom: 2%;
+    margin-right: 2%;
   }
 }
 
@@ -91,6 +136,11 @@
   li:last-child {
     margin-bottom: 0;
   }
+
+  @include viewport--sav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__other-item {
@@ -105,6 +155,10 @@
     svg {
       fill: $red;
     }
+  }
+
+  @include viewport--sav {
+    margin-bottom: 0;
   }
 }
 
@@ -123,4 +177,9 @@
   padding: 41px 0;
   @include font(16, 28);
   color: $grey-text-form;
+
+  @include viewport--sm {
+    @include font(12, 18);
+    padding: 20px 0;
+  }
 }

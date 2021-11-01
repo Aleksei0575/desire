@@ -25,6 +25,10 @@
   &--fluid {
     max-width: 1868px;
     padding: 0;
+
+    @media (max-width: 1759px) {
+      padding: 0 15px;
+    }
   }
 
   // &--contact {
@@ -33,7 +37,7 @@
   // }
 
   @include viewport--lav {
-    padding: 0 50px;
+    padding: 0 40px;
   }
 
   @include viewport--lg {

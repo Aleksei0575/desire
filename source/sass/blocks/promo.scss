@@ -3,25 +3,109 @@
   min-height: 722px;
   padding-bottom: 70px;
 
-  background-image: url('../img/content/promo-bg.jpg');
+  background-image: url("../img/content/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: auto;
+
+  @include viewport--lg {
+    padding-bottom: 40px;
+  }
+
+  @include viewport--av {
+    min-height: 450px;
+  }
 }
 
 .promo__slider-item {
   display: flex;
   justify-content: space-between;
   // align-items: center;
+
+  @include viewport--lav {
+    justify-content: space-around;
+    width: calc(100% / 4 + 100vw);
+  }
+
+  @include viewport--lg {
+    flex-direction: column;
+    width: calc(100% / 3 + 100vw);
+    margin-right: 65px;
+  }
+
+  @include viewport--av {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    width: calc(100% / 4 + 100vw);
+  }
+
+  @include viewport--sav {
+    width: calc(100% / 2.5 + 100vw);
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+    width: calc(100% / 1 + 100vw);
+  }
+
+  @media (max-width: 599px) {
+    .promo__slider-img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 598px) and (max-width: 598px) {
+    .promo__slider-img {
+      display: block;
+    }
+  }
 }
 
 .promo__slider-img {
   max-width: 55.8%;
+
+  @include viewport--lav {
+    width: calc(100% / 3 + 60px);
+  }
+
+  @include viewport--lg {
+    width: 40%;
+  }
+
+  @include viewport--av {
+    width: 25%;
+  }
 }
 
 .promo__slider-info {
   width: 60.7%;
   padding-top: 180px;
+
+  @include viewport--lav {
+    width: calc(100% / 2 + 270px);
+  }
+
+  @include viewport--lg {
+    padding: 15px 7px 0 119px;
+  }
+
+  @include viewport--av {
+    width: 50%;
+    padding: 75px 0 0 0;
+  }
+
+  @media (max-width: 599px) {
+    padding: 15px 7px 0 450px;
+  }
+
+  @media (min-width: 480px) and (max-width: 598px) {
+    padding: 15px 7px 0 5px;
+  }
+
+  @include viewport--xs {
+    padding: 15px 7px 0 15px;
+  }
 }
 
 .promo__slider-title {
@@ -34,7 +118,7 @@
   color: $black;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -42,8 +126,48 @@
     height: 1px;
     background-color: $grey-line;
   }
+
+  @include viewport--lav {
+    @include font(80, 100);
+    width: 50%;
+  }
+
+  @include viewport--lg {
+    @include font(75, 95);
+    width: 100%;
+  }
+
+  @include viewport--av {
+    @include font(50, 70);
+    width: 50%;
+  }
+
+  @include viewport--sm {
+    @include font(40, 60);
+    width: 70%;
+  }
+
+  @include viewport--xs {
+    @include font(25, 40);
+  }
 }
 
 .promo__slider-description {
   width: 53%;
+
+  @include viewport--lav {
+    width: 45%;
+  }
+
+  @include viewport--lg {
+    width: 100%;
+  }
+
+  @include viewport--av {
+    width: 50%;
+  }
+
+  @include viewport--xs {
+    width: 44%;
+  }
 }

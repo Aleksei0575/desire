@@ -14,6 +14,18 @@
   justify-content: center;
   margin-bottom: 40px;
   gap: 25px;
+
+  @include viewport--lg {
+    gap: 10px;
+  }
+
+  @include viewport--av {
+    flex-wrap: wrap;
+  }
+
+  @include viewport--xs {
+    flex-direction: column;
+  }
 }
 
 .page-gallery__btn {
@@ -21,6 +33,10 @@
   width: initial;
   padding: 6px 16px;
   cursor: pointer;
+
+  @include viewport--sm {
+    padding: 4px 10px;
+  }
 }
 
 .page-gallery__items {
@@ -32,16 +48,45 @@
 
   &--short {
     grid-template-areas:
-    'big1 big1 sm1 sm2'
-    'big1 big1 sm3 sm4';
+      "big1 big1 sm1 sm2"
+      "big1 big1 sm3 sm4";
+
+    @include viewport--sm {
+      grid-template-areas:
+        "big1 big1"
+        "big1 big1"
+        "sm1 sm2"
+        "sm3 sm4";
+    }
+
+    @include viewport--xs {
+      grid-template-areas:
+        "big1"
+        "sm1"
+        "sm2"
+        "sm3"
+        "sm4";
+    }
   }
 
   &--large {
     grid-template-areas:
-    'big1 big1 sm1 sm2'
-    'big1 big1 sm3 sm4'
-    'sm5  sm6  big2 big2'
-    'sm7  sm8  big2 big2';
+      "big1 big1 sm1 sm2"
+      "big1 big1 sm3 sm4"
+      "sm5  sm6  big2 big2"
+      "sm7  sm8  big2 big2";
+  }
+
+  @include viewport--mav {
+    grid-gap: 10px;
+  }
+
+  @include viewport--sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include viewport--xs {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
