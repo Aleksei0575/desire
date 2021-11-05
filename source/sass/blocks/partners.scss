@@ -1,6 +1,12 @@
 .partners {
-  width: 1865px;
+  width: 100%;
+  min-width: auto;
   margin: 0 auto 50px;
+
+  @media (min-width: 1919px) and (max-width: 3000px) {
+    min-width: 1865px;
+    width: 1865px;
+  }
 }
 
 .partners__list {
@@ -27,6 +33,24 @@
 .partners__item {
   width: 17.5%;
   margin-right: 3%;
+
+  @include viewport--mav {
+    width: calc(100% / 5 + 0px);
+    margin-right: 0;
+  }
+
+  @include viewport--lg {
+    width: calc(100% / 3 + 0px);
+  }
+
+  @include viewport--av {
+    width: calc(100% / 2 + 0px);
+    text-align: center;
+  }
+
+  @include viewport--sm {
+    width: calc(100% / 1 + 0px);
+  }
 }
 
 .partners__link {
