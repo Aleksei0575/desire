@@ -1,5 +1,9 @@
 .about-us {
   margin-bottom: 100px;
+
+  @include viewport--sav {
+    margin-bottom: 50px;
+  }
 }
 
 .about-us__preview {
@@ -11,6 +15,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @include viewport--xl {
+    background-size: cover;
+  }
+
+  @include viewport--sav {
+    max-height: 260px;
+    min-height: auto
+  }
 }
 
 .about-us__preview-title {
@@ -23,6 +36,28 @@
   justify-content: center;
   min-height: 399px;
   color: $black;
+
+  @include viewport--lg {
+    @include font(75, 95);
+  }
+
+  @include viewport--av {
+    @include font(50, 70);
+  }
+
+  @include viewport--sav {
+    display: flex;
+    align-items: center;
+    min-height: 260px;
+  }
+
+  @include viewport--sm {
+    @include font(40, 60);
+  }
+
+  @include viewport--xs {
+    @include font(25, 40);
+  }
 }
 
 .about-us__content {
@@ -50,10 +85,26 @@
     height: 1px;
     background-color: $grey-line;
   }
+
+  @include viewport--lg {
+    @include font(36, 51);
+  }
+
+  @include viewport--av {
+    width: 100%;
+  }
+
+  @include viewport--xs {
+    @include font(25, 40);
+  }
 }
 
 .about-us__content-block {
   padding-left: 26%;
+
+  @include viewport--lav {
+    padding-left: 7%;
+  }
 }
 
 .about-us__content-text {
@@ -75,8 +126,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @include viewport--xl {
+    background-size: cover;
+  }
+
+  @include viewport--sav {
+    min-height: 260px;
+  }
 }
 
 .about-us__video-play {
   @include btn-reset;
+
+  @include viewport--sav {
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
