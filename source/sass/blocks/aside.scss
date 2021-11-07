@@ -4,6 +4,14 @@
 
 .aside__category {
   margin-bottom: 47px;
+
+  @include viewport--sav {
+    order: 1
+  }
+
+  @include viewport--xs {
+    margin-bottom: 25px;
+  }
 }
 
 .aside__category-title {
@@ -25,8 +33,23 @@
   margin-bottom: 12px;
 }
 
+.aside__posts {
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
 .aside__tags {
   margin-bottom: 47px;
+
+  @include viewport--sav {
+    order: 2;
+  }
+
+  @include viewport--xs {
+    margin-bottom: 25px;
+  }
 }
 
 .aside__tags-title {
@@ -52,6 +75,10 @@
   width: 46%;
   display: flex;
   justify-content: space-between;
+
+  @include viewport--sav {
+    order: 3;
+  }
 }
 
 .aside__social-link {
