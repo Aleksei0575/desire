@@ -75,6 +75,32 @@
       "big1 big1 sm3 sm4"
       "sm5  sm6  big2 big2"
       "sm7  sm8  big2 big2";
+
+    @include viewport--sm {
+      grid-template-areas:
+        "big1 big1"
+        "big1 big1"
+        "sm1 sm2"
+        "sm3 sm4"
+        "big2 big2"
+        "big2 big2"
+        "sm5 sm6"
+        "sm7 sm8";
+    }
+
+    @include viewport--xs {
+
+      a:nth-child(n + 6) {
+        display: none;
+      }
+
+      grid-template-areas:
+        "big1"
+        "sm1"
+        "sm2"
+        "sm3"
+        "sm4";
+    }
   }
 
   @include viewport--mav {

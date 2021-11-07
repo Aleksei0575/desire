@@ -43,6 +43,10 @@
   &--contact {
     width: 22%;
     padding: 6px 43px;
+
+    @include viewport--sm {
+      width: 100%;
+    }
   }
 
   &--blog {

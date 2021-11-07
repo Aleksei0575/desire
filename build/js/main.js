@@ -134,6 +134,68 @@ $(function () {
     arrows: false,
     // variableWidth: true,
     // autoplay: true,
+
+    responsive: [
+			{
+				breakpoint: 1750,
+				settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          // centerMode: true,
+				}
+			},
+			{
+				breakpoint: 1450,
+				settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          // centerMode: true,
+				}
+			},
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 6,
+          slidesToScroll: 6,
+				}
+      },
+      {
+				breakpoint: 1150,
+				settings: {
+					slidesToShow: 5,
+          slidesToScroll: 5,
+				}
+      },
+      {
+				breakpoint: 950,
+				settings: {
+					slidesToShow: 4,
+          slidesToScroll: 4,
+				}
+      },
+      {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+          slidesToScroll: 3,
+				}
+      },
+      {
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+          slidesToScroll: 2,
+          // centerMode: true,
+				}
+      },
+      {
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+          slidesToScroll: 1,
+				}
+      },
+		]
   });
 
   $('.article-slider__box').slick({
@@ -159,6 +221,15 @@ $(function () {
     // autoplay: true,
   });
 //========================================================
+  // let sortBlock = $('.page-gallery__inner');
+
+  // if (sortBlock) {
+  //   let mixer = mixitup('.page-gallery__inner', {
+  //     load: {
+  //         filter: '.category-living'
+  //     }
+  //   });
+  // }
 
   let mixer = mixitup('.page-gallery__inner', {
     load: {
