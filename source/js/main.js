@@ -201,12 +201,37 @@ $(function () {
   $('.article-slider__box').slick({
     prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="img/sprite/icon-arrow-left.svg" alt="icon left"></img></button>',
     nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="img/sprite/icon-arrow-right.svg" alt="icon right"></img></button>',
-    // slidesToShow: 10,
-		// slidesToScroll: 10,
-    // dots: true,
-    // arrows: false,
-    // variableWidth: true,
-    // autoplay: true,
+    autoplay: true,
+
+    // responsive: [
+		// 	{
+		// 		breakpoint: 768,
+		// 		settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+		// 		}
+		// 	},
+		// 	// {
+		// 	// 	breakpoint: 900,
+		// 	// 	settings: {
+    //   //     slidesToShow: 1,
+    //   //     centerMode: true,
+		// 	// 	}
+		// 	// },
+		// 	// {
+		// 	// 	breakpoint: 767,
+		// 	// 	settings: {
+		// 	// 		slidesToShow: 1,
+		// 	// 		centerMode: true,
+		// 	// 	}
+		// 	// },
+		// 	// {
+		// 	// 	breakpoint: 599,
+		// 	// 	settings: {
+		// 	// 		slidesToShow: 1,
+		// 	// 	}
+		// 	// },
+		// ]
   });
 
 // === Раскомментировать блок, чтобы включить слайдер ====
