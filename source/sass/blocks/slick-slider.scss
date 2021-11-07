@@ -1,3 +1,13 @@
+.slick-slider {
+  .slick-track {
+    @include viewport--sm {
+      div:nth-child(n + 11) {
+        display: none;
+      }
+    }
+  }
+}
+
 .slick-dots {
   //для сброса стилей списка у dots слайдера
   @include list-reset;
@@ -23,6 +33,12 @@
   @include viewport--lg {
     margin-left: 0;
     margin-top: 0;
+  }
+
+  @include viewport--sm {
+    li:nth-child(n + 11) {
+      display: none;
+    }
   }
 }
 

@@ -135,12 +135,20 @@
   input {
     width: 100%;
   }
+
+  @include viewport--sm {
+    width: 100%;
+  }
 }
 
 .form__item-email {
   width: 49%;
 
   input {
+    width: 100%;
+  }
+
+  @include viewport--sm {
     width: 100%;
   }
 }
