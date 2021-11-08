@@ -172,6 +172,10 @@
 .form__item-consent {
   margin: 4px 0 21px;
 
+  input {
+    width: initial;
+  }
+
   label {
     position: relative;
     display: block;

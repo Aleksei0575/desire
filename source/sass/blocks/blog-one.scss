@@ -126,11 +126,15 @@
     display: block;
     position: relative;
 
-    color: #707070;;
+    color: #707070;
+
+    @include viewport--xs {
+      padding: 0 20px;
+      text-align: center;
+    }
   }
 }
 
-// Раскомментирвать блоки для слайдера
 .blog-one__posts-arrow {
   position: absolute;
   top: 50%;
@@ -151,41 +155,14 @@
 .blog-one__posts-arrowright {
   right: 0;
 }
-//=================================
 
 .blog-one__prew {
   padding-left: 33px;
-
-// закоментировать при включенном слайдере
-  // &::before {
-  //   @include pseudo-elem;
-  //   top: 50%;
-  //   left: 0;
-  //   transform: translateY(-50%) rotate(135deg);
-  //   border: solid rgba($black, 0.7);
-  //   border-width: 0 3px 3px 0;
-  //   display: inline-block;
-  //   padding: 6px;
-  // }
-//======================================
 }
 
 .blog-one__next {
   padding-right: 33px;
   text-align: right;
-
-  // закоментировать при включенном слайдере
-  // &::after {
-  //   @include pseudo-elem;
-  //   top: 50%;
-  //   right: 0;
-  //   transform: translateY(-50%) rotate(-45deg);
-  //   border: solid rgba($black, 0.7);
-  //   border-width: 0 3px 3px 0;
-  //   display: inline-block;
-  //   padding: 6px;
-  // }
-//======================================
 }
 
 .blog-one__coments {
@@ -208,7 +185,7 @@
   img {
     width: 64px;
     height: 64px;
-    margin-right: 2.0%;
+    margin-right: 2%;
     object-fit: cover;
     border-radius: 50%;
   }
@@ -219,6 +196,14 @@
     @include sans-b;
     color: #707070;
     cursor: pointer;
+
+    @include viewport--xs {
+      order: 1;
+    }
+  }
+
+  @include viewport--xs {
+    flex-wrap: wrap;
   }
 }
 
@@ -242,6 +227,10 @@
 
   p {
     margin: 0;
+  }
+
+  @include viewport--xs {
+    order: 2;
   }
 }
 

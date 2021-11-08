@@ -244,6 +244,37 @@ $(function () {
     // arrows: false,
     // variableWidth: true,
     // autoplay: true,
+
+    responsive: [
+			// {
+			// 	breakpoint: 768,
+			// 	settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+			// 	}
+			// },
+			// {
+			// 	breakpoint: 900,
+			// 	settings: {
+      //     slidesToShow: 1,
+      //     centerMode: true,
+			// 	}
+			// },
+			// {
+			// 	breakpoint: 767,
+			// 	settings: {
+			// 		slidesToShow: 1,
+			// 		centerMode: true,
+			// 	}
+			// },
+			{
+				breakpoint: 551,
+				settings: {
+					slidesToShow: 1,
+          slidesToScroll: 1,
+				}
+			},
+		]
   });
 //========================================================
   // let sortBlock = $('.page-gallery__inner');
